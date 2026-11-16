@@ -1,0 +1,70 @@
+/* Brand Colors */
+:root {
+    --zest_cream: #eae3d4;
+    --zest_blue: #0e1e38;
+    --zest_orange: #f37c40;
+    --zest_black: #000000;
+}
+
+/* General Thingy */
+body {
+    background-color:var(--zest_cream);
+    color:var(--zest_blue);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* FONTS */
+ 
+/* Oswald Bold for headings/title */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: var(--zest_blue);
+}
+
+/* Inter (light) for paragraph */
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* for highlighting text in paragraph */
+.text_highlight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/* NAV BAR (desktop)*/
+.navbar {
+    background-color: var(--zest_orange);
+}
+ /*right side ng header (title logo)*/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /*not sure ulit*/
+    color: var(--zest_blue);
+    font-family:'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.zest_alt_logo {  /*not sure ulit size*/
+    width: 25px;
+    height: 25px;
+}
+
+ .nav-link { /*for pages*/
+    color: var(--zest_blue);
+}
+
+ /*BUTTONS*/
+ .btn-solid.theme-primary {
+    background-color: var(--zest_black);
+    color: var(--zest_cream);
+ }
+.btn-outline.theme-secondary {
+    background-color: var(--zest_cream);
+    color: var(--zest_black);
+ }
