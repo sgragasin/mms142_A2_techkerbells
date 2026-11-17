@@ -1,23 +1,86 @@
+/* Brand Colors */
 :root {
-    /*Brands and Background*/
-    --bs-primary-base: #F37C40;
-    --bs-primary-bg: #EAE3D4;
-    --bs-primary-contrast: #000000;
+  --zest_cream: #EAE3D4;
+  --zest_blue: #0E1E38;
+  --zest_orange: #F37C40;
+  --zest_black: #000000;
+  --zest_input_bg: #c26a34;
+}
 
-    --bs-accent-base: #E48A1D;
+/* General */
+body {
+  background-color: var(--zest_cream);
+  color: var(--zest_blue);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
 
-    --bs-bg-body: #F8F5EF;
-    --bs-fg-body: #252525;
+/* Typography */
+h1, h2, h3, h4, h5, h6, .brand-text {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
+}
 
-    /*Interactive Elements*/
-    --input-bg: #F37C40;
-    --input-placeholder: #593722;
-    --btn-dark-bg: #0E1011;
-    --btn-dark-text: #EAE3D4;
-    --border-dark: #000000;
+/* Nav Bar */
+.navbar,
+.navbar.bg-1 {
+  background-color: var(--zest_orange);
+}
 
-    /*Typography*/
-    --text-heading: #0E1E38;
-    --text-base: #EAE3D4;
-    --text-muted: #5C5750;
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--zest_cream);
+}
+
+.navbar .nav-link {
+  color: var(--zest_blue);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-solid.theme-primary {
+  background-color: var(--zest_black);
+  color: var(--zest_cream);
+  border: 2px solid var(--zest_black);
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-solid.theme-primary:hover {
+  background-color: var(--zest_blue);
+  border-color: var(--zest_blue);
+  color: var(--zest_cream);
+}
+
+/* FOOTER */
+footer,
+footer.bg-1 {
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  padding: 20px 0;
+}
+
+footer .fg-2 {
+  color: var(--zest_blue);
+  font-weight: 500;
 }
