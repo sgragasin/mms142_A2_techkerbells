@@ -1,0 +1,172 @@
+/* Brand Colors */
+:root {
+  --zest_cream: #EAE3D4;
+  --zest_blue: #0E1E38;
+  --zest_orange: #F37C40;
+  --zest_black: #000000;
+  --zest_input_bg: #c26a34;
+}
+
+/* General */
+body {
+  background-color: var(--zest_cream);
+  color: var(--zest_blue);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .brand-text {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
+}
+
+/* Nav Bar */
+.navbar,
+.navbar.bg-1 {
+  background-color: var(--zest_orange);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--zest_cream);
+}
+
+.navbar .nav-link {
+  color: var(--zest_blue);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-solid.theme-primary {
+  background-color: var(--zest_black);
+  color: var(--zest_cream);
+  border: 2px solid var(--zest_black);
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-solid.theme-primary:hover {
+  background-color: var(--zest_blue);
+  border-color: var(--zest_blue);
+  color: var(--zest_cream);
+}
+
+/* FOOTER */
+footer,
+footer.bg-1 {
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  padding: 20px 0;
+}
+
+footer .fg-2 {
+  color: var(--zest_blue);
+  font-weight: 500;
+}
+
+/* LEFT SIDE - SOCIAL MEDIA DIRECTORY */
+.pill-card {
+  background-color: var(--zest_orange);
+  border: 1.5px solid var(--zest_black);
+  border-radius: 50px;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--zest_blue);
+  text-decoration: none;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.pill-card:hover {
+  transform: translateY(-2px);
+  color: var(--zest_blue);
+}
+
+.pill-icon i {
+  font-size: 1.4rem;
+  width: 25px;
+  text-align: center;
+  color: var(--zest_black);
+}
+
+.pill-info {
+  line-height: 1.25;
+}
+
+.pill-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.pill-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+/* RIGHT SIDE - CUSTOMER SERVICE FORM */
+.contact-form {
+  background-color: var(--zest_orange);
+  border: 1.5px solid var(--zest_black);
+  border-radius: 24px;
+  padding: 25px 30px;
+}
+
+.contact-form .form-label {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: var(--zest_blue);
+}
+
+.contact-form .not-required {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--zest_input_bg);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--zest_cream);
+  box-shadow: none;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(234, 227, 212, 0.75);
+}
+
+.contact-form .form-control:focus {
+  outline: 2px solid var(--zest_blue);
+  outline-offset: 1px;
+}
