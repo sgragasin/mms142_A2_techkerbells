@@ -56,12 +56,14 @@
 
   </div>
   
-   <footer class="bg-1 border-top py-7 mt-auto" id="contact">
+ <footer class="bg-1 border-top py-7 mt-auto" id="contact">
     <div class="container d-flex flex-column md:flex-row md:justify-content-between gap-2 text-center">
       <span class="fg-2">Copyright 2026 Zest. All rights reserved.</span>
+	  <span class="fg-2"><a href="#privacy-section">Privacy Policy</a> </span>
+	  <span class="fg-2"><a href="#terms-section">Terms of Use</a> </span>
       <span class="fg-2">orders@examplewebsite142.com</span>
     </div>
-  </footer>
+ </footer>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
