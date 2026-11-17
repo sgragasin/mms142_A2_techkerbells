@@ -59,12 +59,37 @@ p {
     color: var(--zest_blue);
 }
 
- /*BUTTONS*/
- .btn-solid.theme-primary {
-    background-color: var(--zest_black);
-    color: var(--zest_cream);
- }
-.btn-outline.theme-secondary {
-    background-color: var(--zest_cream);
-    color: var(--zest_black);
- }
+ /* Buttons */
+.btn-solid.theme-primary {
+  background-color: var(--zest_black);
+  color: var(--zest_cream);
+  border: 2px solid var(--zest_black);
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-solid.theme-primary:hover {
+  background-color: var(--zest_blue);
+  border-color: var(--zest_blue);
+  color: var(--zest_cream);
+}
+
+/* FOOTER */
+footer,
+footer.bg-1 {
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  padding: 20px 0;
+}
+
+footer .fg-2 {
+  color: var(--zest_blue);
+  font-weight: 500;
+}
