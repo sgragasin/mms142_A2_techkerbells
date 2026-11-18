@@ -1,87 +1,93 @@
 /* Brand Colors */
 :root {
-    --zest_cream: #eae3d4;
-    --zest_blue: #0e1e38;
-    --zest_orange: #f37c40;
-    --zest_black: #000000;
+  --zest_cream: #eae3d4;
+  --zest_blue: #0e1e38;
+  --zest_orange: #f37c40;
+  --zest_orange_hover: #e06a2e; 
+  --zest_input_bg: #0e1e38;     
+  --zest_black: #000000;
 }
 
 /* General Thingy */
 body {
-    background-color:var(--zest_cream);
-    color:var(--zest_blue);
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    margin: 0;
+  background-color: var(--zest_cream);
+  color: var(--zest_blue);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 /* FONTS */
- 
 /* Oswald Bold for headings/title */
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    color: var(--zest_blue);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
 }
 
 /* Inter (light) for paragraph */
 p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
 /* for highlighting text in paragraph */
 .text_highlight {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
-/* NAV BAR (desktop)*/
+/* NAV BAR (desktop) */
 .navbar {
-    background-color: var(--zest_orange);
-}
- /*right side ng header (title logo)*/
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 20px; /*not sure ulit*/
-    color: var(--zest_blue);
-    font-family:'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-.zest_alt_logo {  /*not sure ulit size*/
-    width: 25px;
-    height: 20px;
-}
-.logo {
-    margin-right: 10px;
+  background-color: var(--zest_orange);
 }
 
- .nav-link { /*for pages*/
-    font-family:'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    color: var(--zest_blue);
+/* right side ng header (title logo) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.zest_alt_logo {
+  width: 25px;
+  height: 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.nav-link {
+  /* for pages */
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--zest_blue);
 }
 
 #about, #features {
-    scroll-margin-top: 75px;
+  scroll-margin-top: 75px;
 }
 
- /*BUTTONS*/
- .btn-solid.theme-primary {
-    background-color: var(--zest_black);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: var(--zest_cream);
-    border: none;
- }
+/* BUTTONS */
+.btn-solid.theme-primary {
+  background-color: var(--zest_black);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: var(--zest_cream);
+  border: none;
+}
+
 .btn-outline.theme-secondary {
-    background-color: var(--zest_cream);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700px;
-    color: var(--zest_blue);
+  background-color: var(--zest_cream);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  color: var(--zest_blue);
 }
 
 /* LEFT SIDE - SOCIAL MEDIA DIRECTORY */
@@ -123,7 +129,7 @@ p {
 .pill-value {
   font-size: 0.9rem;
   font-weight: 700;
-  overflow-wrap: anywhere; 
+  overflow-wrap: anywhere;
 }
 
 /* RIGHT SIDE - CUSTOMER SERVICE FORM */
@@ -172,19 +178,20 @@ p {
   border-color: var(--zest_blue);
   outline: 2px solid var(--zest_blue);
   outline-offset: 1px;
-  box-shadow: none; 
+  box-shadow: none;
 }
-/*FOOTER*/
+
+/* FOOTER */
 footer {
-    background-color: var(--zest_orange);
-    color: var(--zest_blue);
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
 }
 
 footer a {
-    color: var(--zest_blue);
-    text-decoration: none;
+  color: var(--zest_blue);
+  text-decoration: none;
 }
 
 footer img {
-    height: auto
+  height: auto; 
 }
