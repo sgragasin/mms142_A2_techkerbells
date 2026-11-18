@@ -1,94 +1,87 @@
 /* Brand Colors */
 :root {
-  --zest_cream: #EAE3D4;
-  --zest_blue: #0E1E38;
-  --zest_orange: #F37C40;
-  --zest_orange_hover: #e06a2e;
-  --zest_black: #000000;
-  --zest_input_bg: #a85624; 
+    --zest_cream: #eae3d4;
+    --zest_blue: #0e1e38;
+    --zest_orange: #f37c40;
+    --zest_black: #000000;
 }
 
-/* General */
+/* General Thingy */
 body {
-  background-color: var(--zest_cream);
-  color: var(--zest_blue);
-  font-family: 'Inter', sans-serif;
-  font-weight: 400; 
-  margin: 0;
+    background-color:var(--zest_cream);
+    color:var(--zest_blue);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin: 0;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6, .brand-text {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  color: var(--zest_blue);
+/* FONTS */
+ 
+/* Oswald Bold for headings/title */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: var(--zest_blue);
 }
 
-/* Nav Bar */
-.navbar,
-.navbar.bg-1 {
-  background-color: var(--zest_orange);
+/* Inter (light) for paragraph */
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
-.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: var(--zest_blue);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  text-decoration: none;
+/* for highlighting text in paragraph */
+.text_highlight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
-.navbar .nav-link {
-  color: var(--zest_blue);
-  font-weight: 500;
-  transition: color 0.15s ease;
+/* NAV BAR (desktop)*/
+.navbar {
+    background-color: var(--zest_orange);
+}
+ /*right side ng header (title logo)*/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px; /*not sure ulit*/
+    color: var(--zest_blue);
+    font-family:'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.zest_alt_logo {  /*not sure ulit size*/
+    width: 25px;
+    height: 20px;
+}
+.logo {
+    margin-right: 10px;
 }
 
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus,
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar .nav-link.active {
-  color: var(--zest_cream);
+ .nav-link { /*for pages*/
+    font-family:'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--zest_blue);
 }
 
-/* Buttons */
-.btn-solid.theme-primary {
-  background-color: var(--zest_black);
-  color: var(--zest_cream);
-  border: 2px solid var(--zest_black);
-  border-radius: 50px;
-  padding: 10px 28px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  margin-top: 5px;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+#about, #features {
+    scroll-margin-top: 75px;
 }
 
-.btn-solid.theme-primary:hover,
-.btn-solid.theme-primary:focus-visible {
-  background-color: var(--zest_blue);
-  border-color: var(--zest_blue);
-  color: var(--zest_cream);
-}
-
-/* Footer */
-footer,
-footer.bg-1 {
-  background-color: var(--zest_orange);
-  color: var(--zest_blue);
-  padding: 20px 0;
-}
-
-footer .fg-2 {
-  color: var(--zest_blue);
-  font-weight: 500;
+ /*BUTTONS*/
+ .btn-solid.theme-primary {
+    background-color: var(--zest_black);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: var(--zest_cream);
+    border: none;
+ }
+.btn-outline.theme-secondary {
+    background-color: var(--zest_cream);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700px;
+    color: var(--zest_blue);
 }
 
 /* LEFT SIDE - SOCIAL MEDIA DIRECTORY */
@@ -180,4 +173,18 @@ footer .fg-2 {
   outline: 2px solid var(--zest_blue);
   outline-offset: 1px;
   box-shadow: none; 
+}
+/*FOOTER*/
+footer {
+    background-color: var(--zest_orange);
+    color: var(--zest_blue);
+}
+
+footer a {
+    color: var(--zest_blue);
+    text-decoration: none;
+}
+
+footer img {
+    height: auto
 }
