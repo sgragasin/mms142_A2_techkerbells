@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, .brand-text {
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   color: var(--zest_blue);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;

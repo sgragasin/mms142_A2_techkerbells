@@ -27,7 +27,7 @@ p {
 .text_highlight {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-
+}
 .navbar,
 .navbar.bg-1 {
   background-color: var(--zest_orange);
@@ -36,7 +36,7 @@ p {
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   color: var(--zest_blue);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
