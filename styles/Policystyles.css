@@ -4,3 +4,11 @@
     --zest_orange: #f37c40;
     --zest_black: #000000;
 }
+
+body {
+  background-color: var(--zest_cream);
+  color: var(--zest_blue);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+  margin: 0;
+}
