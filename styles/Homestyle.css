@@ -54,6 +54,9 @@ p {
     width: 25px;
     height: 25px;
 }
+.logo {
+    margin-right: 10px;
+}
 
  .nav-link { /*for pages*/
     color: var(--zest_blue);
