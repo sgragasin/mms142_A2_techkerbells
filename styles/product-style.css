@@ -1,0 +1,110 @@
+:root {
+  --zest-orange: #F37C40;
+  --zest-navy: #0E1E38;
+  --zest-cream: #EAE3D4;
+  --zest-black: #000000;
+}
+
+body.zest-bg {
+  background-color: var(--zest-cream);
+  color: var(--zest-navy);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; /* Meets WCAG 16px minimum */
+}
+
+.zest-orange {
+  background-color: var(--zest-orange);
+  color: var(--zest-navy);
+}
+
+.zest-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest-navy);
+}
+
+/* Navbar Styling */
+.zest-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--zest-navy);
+}
+
+.zest-nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  color: var(--zest-navy) !important;
+}
+
+.zest-nav-link:hover,
+.zest-nav-link.active {
+  text-decoration: underline;
+}
+
+/* Size Buttons (Unselected = Navy with Orange text, Selected = Orange with Navy text) */
+.zest-size-btn {
+  background-color: var(--zest-navy);
+  color: var(--zest-orange);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  min-width: 65px;
+  border-radius: 0;
+  border: 2px solid var(--zest-navy);
+}
+
+.btn-check:checked + .zest-size-btn,
+.zest-size-btn:hover {
+  background-color: var(--zest-orange);
+  color: var(--zest-navy);
+  border-color: var(--zest-orange);
+}
+
+/* Quantity Stepper */
+.zest-qty-btn {
+  background-color: var(--zest-orange);
+  color: var(--zest-navy);
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.zest-qty-btn:hover {
+  background-color: #d9662b;
+  color: var(--zest-navy);
+}
+
+.zest-qty-input {
+  background-color: var(--zest-navy);
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  width: 48px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* Order Now Dark Button */
+.zest-order-btn {
+  background-color: var(--zest-black);
+  color: var(--zest-cream);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  border-radius: 12px;
+}
+
+.zest-order-btn:hover {
+  background-color: var(--zest-navy);
+  color: #ffffff;
+}
+
+/* Visible Keyboard Focus Indicator (AID Requirement) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible + label {
+  outline: 3px solid var(--zest-navy);
+  outline-offset: 3px;
+}
