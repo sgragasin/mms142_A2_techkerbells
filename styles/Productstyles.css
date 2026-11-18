@@ -101,7 +101,7 @@ body.zest-bg {
   color: #ffffff;
 }
 
-/* Visible Keyboard Focus Indicator (AID Requirement) */
+/* Visible Keyboard Focus Indicator */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible + label {
