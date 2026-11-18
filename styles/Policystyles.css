@@ -27,3 +27,33 @@ p {
 .text_highlight {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+
+.navbar,
+.navbar.bg-1 {
+  background-color: var(--zest_orange);
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.navbar .nav-link {
+  color: var(--zest_blue);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--zest_cream);
+}
