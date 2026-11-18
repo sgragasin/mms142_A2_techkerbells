@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do Good Work Tee | Zest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/product-style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 zest-bg">
+
+  <header>
+    <nav class="navbar navbar-expand-md zest-orange py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 zest-brand" href="index.html">
+          <img src="Images/alt_logo.png" alt="Zest Brand Logo" width="55">
+          <span>Zest</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-md-3">
+            <li class="nav-item"><a class="nav-link zest-nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link zest-nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link zest-nav-link active" aria-current="page" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link zest-nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-auto py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6 text-center">
+        <img src="Images/do-good-work-tee.png" 
+             alt="Do Good Work Tee bold graphic cotton t-shirt design" 
+             class="img-fluid border border-dark product-img">
+      </div>
+
+      <div class="col-md-6">
+        <h1 id="productName" class="zest-heading display-4 mb-1">Do Good Work Tee</h1>
+        <p id="productPrice" class="h2 fw-semibold mb-4">₱499</p>
+
+        <p class="zest-body mb-4">
+          A bold statement graphic tee printed on durable, breathable cotton made to inspire your daily grind.
+        </p>
+
+        <hr class="border-secondary mb-4">
+
+        <form id="orderForm">
+          <div class="mb-4">
+            <label id="sizeLabel" class="form-label zest-heading fs-5 d-block">Size:</label>
+            <div class="d-flex gap-2" role="radiogroup" aria-labelledby="sizeLabel">
+              <input type="radio" class="btn-check" name="shirtSize" id="sizeS" value="S" checked>
+              <label class="btn zest-size-btn" for="sizeS">S</label>
+
+              <input type="radio" class="btn-check" name="shirtSize" id="sizeM" value="M">
+              <label class="btn zest-size-btn" for="sizeM">M</label>
+
+              <input type="radio" class="btn-check" name="shirtSize" id="sizeL" value="L">
+              <label class="btn zest-size-btn" for="sizeL">L</label>
+
+              <input type="radio" class="btn-check" name="shirtSize" id="sizeXL" value="XL">
+              <label class="btn zest-size-btn" for="sizeXL">XL</label>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="shirtQty" class="form-label zest-heading fs-5 d-block">Quantity:</label>
+            <div class="d-inline-flex align-items-center gap-2">
+              <button type="button" class="btn zest-qty-btn" id="decreaseQty" aria-label="Decrease quantity">-</button>
+              <input type="number" id="shirtQty" name="shirtQty" class="form-control text-center zest-qty-input" value="1" min="1" max="99" readonly>
+              <button type="button" class="btn zest-qty-btn" id="increaseQty" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn zest-order-btn w-100 py-2 mt-2">Order Now</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="zest-orange py-3 mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <span>Copyright 2026 Zest. All rights reserved.</span>
+        <a href="policy.html" class="text-dark text-decoration-none">Privacy Policy</a>
+        <a href="terms.html" class="text-dark text-decoration-none">Terms of Use</a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span>orders@examplewebsite142.com</span>
+        <img src="Images/icons.png" alt="Social Media Icons" width="100">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>
