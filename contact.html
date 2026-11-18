@@ -18,12 +18,11 @@
   
   <script src="./js/mailto.js" defer></script>
 </head>
-<body class="d-flex flex-column min-vh-100" data-bs-theme="light">
-  <nav class="navbar md:navbar-expand bg-1 border-bottom">
-    <div class="container">
-      <img src="Images/alt_logo.png" alt="Zest Logo" class="logo" width="75">
-      <a class="navbar-brand" href="#">Zest</a>
-
+<nav class="navbar md:navbar-expand bg-1 border-bottom sticky-top">
+      <div class="container">
+        <img src="Images/alt_logo.png" alt="Zest Logo" class="logo" width="75">
+        <a class="navbar-brand" href="#">Zest</a>
+		  
       <button class="btn-icon navbar-toggler" type="button"
               data-bs-toggle="drawer" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -140,14 +139,18 @@
   </main>
 
   <footer class="bg-1 border-top py-7 mt-auto" id="contact">
-    <div class="container d-flex flex-column md:flex-row md:justify-content-between gap-2 text-center">
-      <span class="fg-2">Copyright 2026 Zest. All rights reserved.</span>
-	  <span class="fg-2"><a href="#privacy-section">Privacy Policy</a> </span>
-	  <span class="fg-2"><a href="#terms-section">Terms of Use</a> </span>
-      <span class="fg-2">orders@examplewebsite142.com</span>
-	  <img src="icons.png" alt="Social Media Icons" class="Icons" width="120">
-    </div>
-  </footer>
+      <div class="container d-flex flex-column md:flex-row md:justify-content-between align-items-center gap-2">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="text-dark text-decoration-none">Copyright 2026 Zest. All rights reserved.</span>
+          <a href="policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <span class="text-dark text-decoration-none">orders@examplewebsite142.com</span>
+          <img src="Images/icons.png" alt="icons" class="logo" width="180">
+        </div>
+      </div>
+    </footer>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
