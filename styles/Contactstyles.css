@@ -3,8 +3,9 @@
   --zest_cream: #EAE3D4;
   --zest_blue: #0E1E38;
   --zest_orange: #F37C40;
+  --zest_orange_hover: #e06a2e;
   --zest_black: #000000;
-  --zest_input_bg: #c26a34;
+  --zest_input_bg: #a85624; 
 }
 
 /* General */
@@ -12,7 +13,7 @@ body {
   background-color: var(--zest_cream);
   color: var(--zest_blue);
   font-family: 'Inter', sans-serif;
-  font-weight: 300;
+  font-weight: 400; 
   margin: 0;
 }
 
@@ -29,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .brand-text {
   background-color: var(--zest_orange);
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -37,17 +38,21 @@ h1, h2, h3, h4, h5, h6, .brand-text {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 28px;
-}
-
-.navbar .navbar-brand:hover,
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: var(--zest_cream);
+  text-decoration: none;
 }
 
 .navbar .nav-link {
   color: var(--zest_blue);
   font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--zest_cream);
 }
 
 /* Buttons */
@@ -63,16 +68,17 @@ h1, h2, h3, h4, h5, h6, .brand-text {
   letter-spacing: 0.5px;
   cursor: pointer;
   margin-top: 5px;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.btn-solid.theme-primary:hover {
+.btn-solid.theme-primary:hover,
+.btn-solid.theme-primary:focus-visible {
   background-color: var(--zest_blue);
   border-color: var(--zest_blue);
   color: var(--zest_cream);
 }
 
-/* FOOTER */
+/* Footer */
 footer,
 footer.bg-1 {
   background-color: var(--zest_orange);
@@ -101,6 +107,7 @@ footer .fg-2 {
 
 .pill-card:hover {
   transform: translateY(-2px);
+  background-color: var(--zest_orange_hover);
   color: var(--zest_blue);
 }
 
@@ -123,7 +130,7 @@ footer .fg-2 {
 .pill-value {
   font-size: 0.9rem;
   font-weight: 700;
-  word-break: break-word;
+  overflow-wrap: anywhere; 
 }
 
 /* RIGHT SIDE - CUSTOMER SERVICE FORM */
@@ -146,14 +153,14 @@ footer .fg-2 {
 
 .contact-form .not-required {
   font-size: 0.8rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .contact-form .form-control {
   width: 100%;
   box-sizing: border-box;
   background-color: var(--zest_input_bg);
-  border: none;
+  border: 1.5px solid transparent;
   border-radius: 8px;
   padding: 10px 12px;
   font-family: 'Inter', sans-serif;
@@ -163,10 +170,14 @@ footer .fg-2 {
 }
 
 .contact-form .form-control::placeholder {
-  color: rgba(234, 227, 212, 0.75);
+  color: rgba(234, 227, 212, 0.85);
 }
 
 .contact-form .form-control:focus {
+  background-color: var(--zest_input_bg);
+  color: var(--zest_cream);
+  border-color: var(--zest_blue);
   outline: 2px solid var(--zest_blue);
   outline-offset: 1px;
+  box-shadow: none; 
 }
