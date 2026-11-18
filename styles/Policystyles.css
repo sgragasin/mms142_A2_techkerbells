@@ -79,3 +79,15 @@ p {
   border-color: var(--zest_blue);
   color: var(--zest_cream);
 }
+
+footer,
+footer.bg-1 {
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  padding: 20px 0;
+}
+
+footer .fg-2 {
+  color: var(--zest_blue);
+  font-weight: 500;
+}
