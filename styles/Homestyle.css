@@ -158,7 +158,11 @@ footer {
     color: var(--zest_blue);
 }
 
-footer a{
+footer a {
     color: var(--zest_blue);
     text-decoration: none;
+}
+
+footer img {
+    height: auto
 }
