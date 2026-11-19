@@ -13,60 +13,54 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    color: var(--zest_blue);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
 }
 
-/* Inter (light) for paragraph */
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
-/* for highlighting text in paragraph */
 .text_highlight {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
-#about,
-#features {
-  scroll-margin-top: 75px;
-}
-
-/* NAV BAR (desktop)*/
 .navbar {
-    background-color: var(--zest_orange);
-}
- /*right side ng header (title logo)*/
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 20px; /*not sure ulit*/
-    color: var(--zest_blue);
-    font-family:'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-.zest_alt_logo {  /*not sure ulit size*/
-    width: 25px;
-    height: 20px;
-}
-.logo {
-    margin-right: 10px;
+  background-color: var(--zest_orange);
 }
 
- .nav-link { /*for pages*/
-    font-family:'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    color: var(--zest_blue);
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.zest_alt_logo {
+  width: 25px;
+  height: 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--zest_blue);
 }
 
 #about, #features {
-    scroll-margin-top: 75px;
+  scroll-margin-top: 75px;
 }
 
 /* Policy Section */
@@ -136,7 +130,6 @@ p {
   color: var(--zest_cream);
 }
 
-/* Footer */
 footer,
 footer.bg-1 {
   background-color: var(--zest_orange);
