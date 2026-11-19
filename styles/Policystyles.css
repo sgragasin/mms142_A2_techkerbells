@@ -19,11 +19,13 @@ h1 {
   color: var(--zest_blue);
 }
 
+/* Inter (light) for paragraph */
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
+/* for highlighting text in paragraph */
 .text_highlight {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
