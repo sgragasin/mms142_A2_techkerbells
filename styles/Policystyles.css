@@ -1,66 +1,40 @@
 :root {
-    --zest_cream: #eae3d4;
-    --zest_blue: #0e1e38;
-    --zest_orange: #f37c40;
-    --zest_black: #000000;
+  --zest_cream: #eae3d4;
+  --zest_blue: #0e1e38;
+  --zest_orange: #f37c40;
+  --zest_black: #000000;
 }
 
 body {
   background-color: var(--zest_cream);
   color: var(--zest_blue);
   font-family: 'Inter', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   margin: 0;
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
 }
 
 p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
 .text_highlight {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
-.navbar {
-    background-color: var(--zest_orange);
+#about,
+#features {
+  scroll-margin-top: 75px;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: var(--zest_blue);
-    font-family:'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
-.zest_alt_logo { 
-    width: 25px;
-    height: 20px;
-}
-.logo {
-    margin-right: 10px;
-}
-
- .nav-link {
-    font-family:'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    color: var(--zest_blue);
-}
-
-#about, #features {
-    scroll-margin-top: 75px;
-}
-
+/* Navbar */
 .navbar,
 .navbar.bg-1 {
   background-color: var(--zest_orange);
@@ -78,8 +52,10 @@ p {
 }
 
 .navbar .nav-link {
-  color: var(--zest_blue);
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
+  font-size: 28px;
+  color: var(--zest_blue);
   transition: color 0.15s ease;
 }
 
@@ -91,7 +67,18 @@ p {
   color: var(--zest_cream);
 }
 
+.zest_alt_logo {
+  width: 25px;
+  height: 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+/* Policy Section */
 .policy-container {
+  align-self: center;
   width: 100%;
   max-width: 640px;
   margin-top: 60px;
@@ -107,6 +94,7 @@ p {
 }
 
 .policy-container .brand-text {
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(3rem, 7vw, 4.5rem);
   font-weight: 700;
   letter-spacing: 2px;
@@ -132,6 +120,7 @@ p {
   color: #273246;
 }
 
+/* Buttons */
 .btn-solid.theme-primary {
   background-color: var(--zest_black);
   color: var(--zest_cream);
@@ -154,16 +143,24 @@ p {
   color: var(--zest_cream);
 }
 
-footer {
-    background-color: var(--zest_orange);
-    color: var(--zest_blue);
+/* Footer */
+footer,
+footer.bg-1 {
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  padding: 20px 0;
 }
 
 footer a {
-    color: var(--zest_blue);
-    text-decoration: none;
+  color: var(--zest_blue);
+  text-decoration: none;
+}
+
+footer .fg-2 {
+  color: var(--zest_blue);
+  font-weight: 500;
 }
 
 footer img {
-    height: auto
+  height: auto;
 }
