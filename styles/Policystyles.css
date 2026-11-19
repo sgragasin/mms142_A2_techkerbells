@@ -28,6 +28,39 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
+
+.navbar {
+    background-color: var(--zest_orange);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--zest_blue);
+    font-family:'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.zest_alt_logo { 
+    width: 25px;
+    height: 20px;
+}
+.logo {
+    margin-right: 10px;
+}
+
+ .nav-link {
+    font-family:'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--zest_blue);
+}
+
+#about, #features {
+    scroll-margin-top: 75px;
+}
+
 .navbar,
 .navbar.bg-1 {
   background-color: var(--zest_orange);
