@@ -5,10 +5,10 @@ const form = document.querySelector("#contact-form");
 function buildMailto() {
   const name = document.querySelector("#full-name").value;
   const email = document.querySelector("#email").value;
-  const topic = document.querySelector("#topic").value;
-  const text = document.querySelector("#message").value;
+  const topic = document.querySelector("#contact-number").value;
+  const text = document.querySelector("#concerns/inquiries").value;
 
-  const subject = "Website message: " + topic;
+  const subject = "Full name" + concerns/inquiries topi;
   const body =
     "Name: " + name + "\r\n" +
     "Email: " + email + "\r\n\r\n" +
