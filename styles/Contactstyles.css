@@ -8,7 +8,16 @@
   --zest_black: #000000;
 }
 
-/* General Thingy */
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; 
+}
+
 body {
   background-color: var(--zest_cream);
   color: var(--zest_blue);
@@ -17,32 +26,33 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* FONTS */
-/* Oswald Bold for headings/title */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: var(--zest_blue);
 }
 
-/* Inter (light) for paragraph */
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
-/* for highlighting text in paragraph */
 .text_highlight {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
-/* NAV BAR (desktop) */
+/* NAV BAR */
 .navbar {
   background-color: var(--zest_orange);
 }
 
-/* right side ng header (title logo) */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -63,7 +73,6 @@ p {
 }
 
 .nav-link {
-  /* for pages */
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 30px;
@@ -157,7 +166,6 @@ p {
 
 .contact-form .form-control {
   width: 100%;
-  box-sizing: border-box;
   background-color: var(--zest_orange_hover);
   border: 1.5px solid transparent;
   border-radius: 8px;
@@ -194,4 +202,35 @@ footer a {
 
 footer img {
   height: auto; 
+}
+
+/* =========================================
+   RESPONSIVE RULES (TABLET & MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .pill-card {
+    padding: 10px 16px;
+    gap: 12px;
+    border-radius: 30px;
+  }
+
+  .contact-form {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .btn-solid.theme-primary,
+  .btn-outline.theme-secondary {
+    width: 100%;
+    padding: 12px;
+  }
 }
