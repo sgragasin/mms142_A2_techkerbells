@@ -13,51 +13,101 @@ body {
   margin: 0;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    color: var(--zest_blue);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--zest_blue);
 }
 
 p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
 .text_highlight {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
-.navbar,
-.navbar.bg-1 {
+
+.navbar {
   background-color: var(--zest_orange);
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
   display: flex;
   align-items: center;
   gap: 20px;
   color: var(--zest_blue);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 28px;
-  text-decoration: none;
+  font-size: 30px;
 }
 
-.navbar .nav-link {
-  color: var(--zest_blue);
+.zest_alt_logo {
+  width: 25px;
+  height: 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  transition: color 0.15s ease;
+  font-size: 30px;
+  color: var(--zest_blue);
 }
 
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus,
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar .nav-link.active {
-  color: var(--zest_cream);
+#about, #features {
+  scroll-margin-top: 75px;
 }
 
+/* Terms Section */
+.terms-container {
+  align-self: center;
+  width: 100%;
+  max-width: 640px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 24px;
+}
+
+.terms-container header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.terms-container .brand-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3rem, 7vw, 90px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #162238;
+}
+
+.terms-container .divider {
+  border: none;
+  height: 1.5px;
+  background-color: #4a5262;
+  max-width: 580px;
+  margin: 12px auto 0;
+  opacity: 1;
+}
+
+.terms-content p {
+  font-size: 18px !important;
+  line-height: 1.55;
+  text-align: left;
+  margin: 0 0 24px 0;
+  color: #0e1e38;
+}
+
+/* Buttons */
 .btn-solid.theme-primary {
   background-color: var(--zest_black);
   color: var(--zest_cream);
@@ -94,4 +144,5 @@ footer a {
 
 footer img {
     height: auto
+}
 }
