@@ -133,11 +133,13 @@ p {
 footer {
     background-color: var(--zest_orange);
     color: var(--zest_blue);
+    font-family: 'Oswald', sans serif;
 }
 
 footer a {
     color: var(--zest_blue);
     text-decoration: none;
+    font-family: 'Oswald', sans serif;
 }
 
 footer img {
