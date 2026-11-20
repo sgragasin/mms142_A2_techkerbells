@@ -166,3 +166,34 @@ footer a {
 footer img {
     height: auto
 }
+
+/* =========================================
+   RESPONSIVE RULES (TABLET & MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .pill-card {
+    padding: 10px 16px;
+    gap: 12px;
+    border-radius: 30px;
+  }
+
+  .contact-form {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .btn-solid.theme-primary,
+  .btn-outline.theme-secondary {
+    width: 100%;
+    padding: 12px;
+  }
+}
