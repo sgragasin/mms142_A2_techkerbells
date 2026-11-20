@@ -133,13 +133,11 @@ p {
 footer {
     background-color: var(--zest_orange);
     color: var(--zest_blue);
-    font-family: 'Inter', sans serif;
 }
 
 footer a {
     color: var(--zest_blue);
     text-decoration: none;
-    font-family: 'Inter', sans serif;
 }
 
 footer img {
