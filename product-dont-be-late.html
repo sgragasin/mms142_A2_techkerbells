@@ -15,26 +15,31 @@
 <body class="d-flex flex-column min-vh-100 zest-bg">
 
   <header>
-    <nav class="navbar navbar-expand-md zest-orange py-3">
+    <nav class="navbar md:navbar-expand bg-1 border-bottom sticky-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2 zest-brand" href="index.html">
-          <img src="Images/alt_logo.png" alt="Zest Brand Logo" width="55">
-          <span>Zest</span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        <img src="Images/alt_logo.png" alt="Zest Logo" class="logo" width="75">
+        <a class="navbar-brand" href="index.html">Zest</a>
+     
+        <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto gap-md-3">
-            <li class="nav-item"><a class="nav-link zest-nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link zest-nav-link" href="index.html#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link zest-nav-link active" aria-current="page" href="index.html#features">Shop</a></li>
-            <li class="nav-item"><a class="nav-link zest-nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+        <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="nav navbar-nav md:ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html#features">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </dialog>
       </div>
     </nav>
   </header>
@@ -110,19 +115,19 @@
     </div>
   </main>
 
-  <footer class="zest-orange py-3 mt-auto">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small">
-      <div class="d-flex flex-wrap justify-content-center gap-3">
-        <span>Copyright 2026 Zest. All rights reserved.</span>
-        <a href="policy.html" class="text-dark text-decoration-none">Privacy Policy</a>
-        <a href="terms.html" class="text-dark text-decoration-none">Terms of Use</a>
+  <footer class="bg-1 border-top py-7 mt-auto" id="contact">
+      <div class="container d-flex flex-column md:flex-row md:justify-content-between align-items-center gap-2">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="text-dark text-decoration-none">Copyright 2026 Zest. All rights reserved.</span>
+          <a href="policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <span class="text-dark text-decoration-none">orders@examplewebsite142.com</span>
+          <img src="Images/icons.png" alt="icons" class="logo" width="180">
+        </div>
       </div>
-      <div class="d-flex align-items-center gap-3">
-        <span>orders@examplewebsite142.com</span>
-        <img src="Images/icons.png" alt="Social Media Icons" width="100">
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/order.js"></script>
