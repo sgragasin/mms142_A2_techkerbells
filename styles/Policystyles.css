@@ -1,11 +1,26 @@
 :root {
   --zest_cream: #eae3d4;
   --zest_blue: #0e1e38;
+  --zest_blue_alt: #162238;
+  --zest_slate: #4a5262;
   --zest_orange: #f37c40;
   --zest_black: #000000;
 }
 
+/* Global Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+}
+
 body {
+  max-width: 100%;
+  overflow-x: clip; /* Safer than hidden; preserves position: sticky */
   background-color: var(--zest_cream);
   color: var(--zest_blue);
   font-family: 'Inter', sans-serif;
@@ -29,6 +44,7 @@ p {
   font-weight: 700;
 }
 
+/* Navigation */
 .navbar {
   background-color: var(--zest_orange);
 }
@@ -59,19 +75,23 @@ p {
   color: var(--zest_blue);
 }
 
-#about, #features {
+.nav-link:focus-visible,
+footer a:focus-visible {
+  outline: 2px solid var(--zest_blue);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+#about,
+#features {
   scroll-margin-top: 75px;
 }
 
 /* Policy Section */
 .policy-container {
-  align-self: center;
   width: 100%;
   max-width: 640px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 60px auto;
   padding: 0 24px;
 }
 
@@ -87,24 +107,24 @@ p {
   letter-spacing: 2px;
   margin: 0;
   text-transform: uppercase;
-  color: #162238;
+  color: var(--zest_blue_alt);
 }
 
 .policy-container .divider {
   border: none;
   height: 1.5px;
-  background-color: #4a5262;
+  background-color: var(--zest_slate);
   max-width: 580px;
   margin: 12px auto 0;
   opacity: 1;
 }
 
 .policy-content p {
-  font-size: 17px !important;
+  font-size: 17px;
   line-height: 1.55;
   text-align: left;
   margin: 0 0 24px 0;
-  color: #0e1e38;
+  color: var(--zest_blue);
 }
 
 /* Buttons */
@@ -130,18 +150,47 @@ p {
   color: var(--zest_cream);
 }
 
+/* Footer */
 footer {
-    background-color: var(--zest_orange);
-    color: var(--zest_blue);
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 400 !important;
+  background-color: var(--zest_orange);
+  color: var(--zest_blue);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 footer a {
-    color: var(--zest_blue);
-    text-decoration: none;
+  color: var(--zest_blue);
+  text-decoration: none;
 }
 
 footer img {
-    height: auto
+  height: auto;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+  .pill-card {
+    padding: 10px 16px;
+    gap: 12px;
+    border-radius: 30px;
+  }
+
+  .contact-form {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .btn-solid.theme-primary,
+  .btn-outline.theme-secondary {
+    width: 100%;
+    padding: 12px;
+  }
 }
