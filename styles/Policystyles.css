@@ -133,6 +133,8 @@ p {
 footer {
     background-color: var(--zest_orange);
     color: var(--zest_blue);
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
 }
 
 footer a {
