@@ -165,3 +165,46 @@ input:focus-visible + label {
   font-size: 26px;
   line-height: 1;
 }
+
+main.container {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+main .row {
+  --bs-gutter-x: 3.5rem;
+  --bs-gutter-y: 2rem;
+}
+
+#productName {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem !important;
+}
+
+#productPrice {
+  font-size: 2rem;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.zest-body {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem !important;
+}
+
+#orderForm hr,
+main hr {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+#orderForm > .mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+#sizeLabel,
+label[for="shirtQty"] {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+}
