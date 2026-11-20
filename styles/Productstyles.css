@@ -108,3 +108,60 @@ input:focus-visible + label {
   outline: 3px solid var(--zest-navy);
   outline-offset: 3px;
 }
+
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+#productCarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+#productCarousel .carousel-item {
+  display: none;
+}
+
+#productCarousel .carousel-item.active {
+  display: block;
+}
+
+#productCarousel .carousel-control-prev,
+#productCarousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(14, 30, 56, 0.75);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#productCarousel .carousel-control-prev {
+  left: 12px;
+}
+
+#productCarousel .carousel-control-next {
+  right: 12px;
+}
+
+#productCarousel .carousel-control-prev::before {
+  content: "‹";
+  font-size: 26px;
+  line-height: 1;
+}
+
+#productCarousel .carousel-control-next::before {
+  content: "›";
+  font-size: 26px;
+  line-height: 1;
+}
