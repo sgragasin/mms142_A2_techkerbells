@@ -102,10 +102,12 @@ p {
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 20px 0;
 }
 
 .main_logo {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     margin-bottom: 20px;
 }
