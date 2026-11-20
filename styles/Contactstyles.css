@@ -212,8 +212,12 @@ footer img {
     font-size: 50px;
   }
 
-  .logo {
+  header .logo {
     width: 100px;
+  }
+
+  header {
+    flex-direction: column;
   }
 
   .navbar-brand {
