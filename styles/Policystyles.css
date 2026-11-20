@@ -130,23 +130,16 @@ p {
   color: var(--zest_cream);
 }
 
-footer,
-footer.bg-1 {
-  background-color: var(--zest_orange);
-  color: var(--zest_blue);
-  padding: 20px 0;
+footer {
+    background-color: var(--zest_orange);
+    color: var(--zest_blue);
 }
 
 footer a {
-  color: var(--zest_blue);
-  text-decoration: none;
-}
-
-footer .fg-2 {
-  color: var(--zest_blue);
-  font-weight: 500;
+    color: var(--zest_blue);
+    text-decoration: none;
 }
 
 footer img {
-  height: auto;
+    height: auto
 }
