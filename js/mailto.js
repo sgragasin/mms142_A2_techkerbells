@@ -1,17 +1,17 @@
-const TO_ADDRESS = "hello@examplewebsite.com";
-
+const TO_ADDRESS = "hello@examplewebsite142.com";
 const form = document.querySelector("#contact-form");
 
 function buildMailto() {
   const name = document.querySelector("#full-name").value;
   const email = document.querySelector("#email").value;
-  const topic = document.querySelector("#contact-number").value;
-  const text = document.querySelector("#concerns/inquiries").value;
+  const contactNumber = document.querySelector("#contact-number").value;
+  const text = document.querySelector("#concerns-inquiries").value;
 
-  const subject = "Full name" + concerns/inquiries topi;
+  const subject = "Inquiry from " + name;
   const body =
     "Name: " + name + "\r\n" +
-    "Email: " + email + "\r\n\r\n" +
+    "Email: " + email + "\r\n" +
+    "Contact Number: " + contactNumber + "\r\n\r\n" +
     text;
 
   return (
