@@ -105,6 +105,10 @@ p {
     color: var(--zest_cream);
     font-family:'Oswald', sans-serif;
     font-weight: 700;
+
+}
+.fg-1 {
+  color: var(--zest_cream);
 }
 
 /*SHOP*/
