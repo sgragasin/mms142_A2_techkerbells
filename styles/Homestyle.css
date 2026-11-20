@@ -6,6 +6,16 @@
     --zest_black: #000000;
 }
 
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 /* General Thingy */
 body {
     background-color:var(--zest_cream);
