@@ -167,44 +167,83 @@ input:focus-visible + label {
 }
 
 main.container {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  max-width: 1140px;
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
 main .row {
   --bs-gutter-x: 3.5rem;
   --bs-gutter-y: 2rem;
+  align-items: stretch !important;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 #productName {
-  font-size: 3.25rem;
-  line-height: 1.1;
-  margin-bottom: 0.5rem !important;
+  font-size: 4rem !important;
+  line-height: 1.05;
+  margin-bottom: 0.4rem !important;
 }
 
 #productPrice {
-  font-size: 2rem;
-  font-weight: 700 !important;
-  margin-bottom: 1.5rem !important;
+  font-size: 2.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.75rem !important;
 }
 
 .zest-body {
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem !important;
+  font-size: 1.35rem !important;
+  line-height: 1.45;
+  max-width: 420px;
+  margin-bottom: 1.75rem !important;
 }
 
 #orderForm hr,
 main hr {
   margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.75rem !important;
+  border-color: #9e9a90 !important;
+  opacity: 0.7;
 }
 
 #orderForm > .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.75rem !important;
 }
 
 #sizeLabel,
 label[for="shirtQty"] {
-  font-size: 1.25rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.zest-size-btn {
+  font-size: 1.35rem !important;
+  min-width: 85px;
+  padding: 0.35rem 0.75rem;
+}
+
+.zest-qty-btn,
+.zest-qty-input {
+  height: 42px;
+  font-size: 1.25rem;
+}
+
+.zest-qty-btn {
+  width: 42px;
+}
+
+.zest-qty-input {
+  width: 56px;
+}
+
+.zest-order-btn {
+  font-size: 1.9rem !important;
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+  border-radius: 14px;
 }
