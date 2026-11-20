@@ -208,6 +208,14 @@ footer img {
    RESPONSIVE RULES (TABLET & MOBILE)
    ========================================= */
 @media (max-width: 768px) {
+  .brand-text {
+    font-size: 50px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
   .navbar-brand {
     font-size: 22px;
     gap: 10px;
